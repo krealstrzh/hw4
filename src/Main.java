@@ -27,5 +27,31 @@ public class Main {
                 System.out.println("Год пролета кометы -- " + cometFlyYear);
             }
         }
+        // Задание 4
+        for (int a = 1; a <= 30; a++) {
+            System.out.print(a + ": ");
+            if (a % 3 == 0 && a % 5 == 0) {
+                System.out.print("ping pong");
+                System.out.println(" ");
+            } else if (a % 5 == 0) {
+                System.out.print("pong ");
+                System.out.println(" ");
+            } else if (a % 3 == 0) {
+                System.out.print("ping");
+                System.out.println(" ");
+            } else {
+                System.out.println(" ");
+            }
+        }
+        // Задание 5
+        int fibonacciFirst = 0;
+        int fibonacciSecond = 1;
+        int fibonacciSum = 0;
+        for (int counter = 1; counter <= 8; counter++) {
+            fibonacciSum = fibonacciFirst + fibonacciSecond;
+            System.out.print(fibonacciSum + " ");
+            fibonacciFirst = fibonacciSecond;
+            fibonacciSecond = fibonacciSum;
+        }
     }
 }
