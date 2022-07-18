@@ -3,14 +3,12 @@ public class Main {
         // Задание 1
         int i = 0;
         while (i < 10) {
-            i ++;
+            i++;
             System.out.print(i + " ");
         }
         System.out.println( );
-        i++;
-        while (i > 1) {
-            i--;
-            System.out.print(i + " ");
+        for (int k = 10; k > 0; k--) {
+            System.out.print(k + " ");
         }
         System.out.println( );
         // Задание 2
